@@ -1,0 +1,236 @@
+@import './stylesheet/index';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-container {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    padding-bottom: 152px;
+}
+
+nav {
+    padding-top: 31px;
+}
+
+.left-corner, .right-corner {
+    background-color: $secondary-color;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.left-corner {
+    left: 0;
+    width: 111.61px;
+    height: 176.96px;
+    border-bottom-right-radius: 80px;
+}
+
+.right-corner {
+    width: 604.15px;
+    height: 700px;
+    right: 0;
+    border-bottom-left-radius: 100px;
+}
+
+
+.nav-container {
+    padding: 0 279px 0 195px;
+}
+
+.container {
+    padding: 0 195px;
+    margin: 0 auto;
+}
+
+.nav-wrapper {
+    display: flex;   
+    align-items: center;
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.navigatio-list {
+    display: flex;
+    margin-left: 80px;
+
+    li {
+        font-size: 14px;
+        font-weight: 500;
+
+        &:not(:last-child) {
+            margin-right: 21px;
+        }
+    }
+}
+
+.navigation-actions {
+    display: flex;
+    align-items: center;
+    margin-left:  auto;
+
+    a {
+        text-decoration: none;
+    }
+    
+    .login {
+        color: $primary-color;
+        font-size: 14px;
+        margin-right: 45px;
+    }
+
+    .join-us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 137px;
+        height: 52px;
+        background-color: $primary-dark;
+        color: #fff;
+        border-radius: 5px;
+        text-transform: uppercase;
+
+        img {
+            margin-left: 10px;
+            width: 15px;
+            height: 15px;
+            margin-top: 3px;
+        }
+    }
+}
+
+.header-info {
+    max-width: 532px;
+    margin: 200px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .title-sm {
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+        color: $primary-color;
+    }
+
+    .title-lg {
+        margin-bottom: 40px;
+        font-size: 58px;
+        text-align: center;
+        color: $text-color;
+    }
+
+    .description {
+        font-size: 20px;
+        color: $text-secondary;
+        margin-bottom: 40px;
+    }
+
+    .header-article_actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            font-size: $font-size-base;
+            text-transform: capitalize;
+        }
+
+        .get-quote {
+            margin-right: 10px;
+            background-color: $primary-color;
+            color: #fff;
+        }
+
+        .learn-more {
+            background-color: transparent;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+        }
+
+    }
+}
+
+.sponsers {
+    padding: 130px 0;
+    .sponsers-container {
+        padding: 0 220px;
+    }
+    .sponsers-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        li {
+            flex: 1;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+
+            &:nth-child(1) {
+                img {
+                    height: 34px;
+                }
+            }
+
+            &:nth-child(2) {
+                img {
+                    height: 59px;
+                }
+            }
+
+            &:nth-child(3) {
+                img {
+                    height: 75px;
+                }
+            }
+            
+            &:nth-child(4) {
+                img {
+                    height: 42px;
+                }
+            }
+            
+            &:nth-child(5) {
+                img {
+                    height: 62px;
+                }
+            }
+            
+            &:nth-child(6) {
+                img {
+                    height: 72px;
+                }
+            }
+            
+        }
+    }
+}
