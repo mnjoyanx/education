@@ -5,82 +5,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="styles/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="main-container">
-      <header>
-        <div class="left-corner"></div>
-        <div class="right-corner"></div>
-        <nav>
+      <!-- Headeer -->
+        <header>
+          <div class="left-corner"></div>
+          <div class="right-corner"></div>
+          <nav>
+            <div class="container">
+              <div class="nav-wrapper">
+                <h1 class="brand-name">Brand name</h1>
+
+                <ul class="navigatio-list">
+                  <li>Home</li>
+                  <li>Products</li>
+                  <li>Pricing</li>
+                  <li>Contact</li>
+                </ul>
+
+                <div class="navigation-actions">
+                  <a href="#" class="login">Login</a>
+                  <a href="#" class="join-us"
+                    >Join us
+                    <img src="assets/arrow-right.svg" alt="arrow-right" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <article class="header-info">
+            <h4 class="title-sm">For better future</h4>
+            <h2 class="title-lg">HIGH QUALITY COURSES</h2>
+            <p class="description">
+              Find the right instructor for you from over 10,000 teachers
+            </p>
+
+            <div class="header-article_actions">
+              <a href="#" class="get-quote">get quote now</a>
+              <a href="#" class="learn-more">learn more</a>
+            </div>
+          </article>
+        </header>
+      <!-- Headeer -->
+
+
+      <!-- Sponsers -->
+        <section class="sponsers">
+          <div class="sponsers-container">
+            <ul class="sponsers-wrapper">
+              <li>
+                <img src="assets/hooli.png" alt="hooli" />
+              </li>
+              <li>
+                <img src="assets/lia.png" alt="lia" />
+              </li>
+              <li>
+                <img src="assets/sponser-3.png" alt="sponser-3" />
+              </li>
+              <li>
+                <img src="assets/stripe.png" alt="stripe" />
+              </li>
+              <li>
+                <img src="assets/aws.png" alt="aws" />
+              </li>
+
+              <li>
+                <img src="assets/reddis.png" alt="reddis" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      <!-- Sponsers -->
+
+      <!-- Approdable -->
+        <section class="approdable">
           <div class="container">
-            <div class="nav-wrapper">
-              <h1 class="brand-name">Brand name</h1>
+            <p class="title-sm">Quick examination</p>
+            <h2 class="title-lg">Approdable Packages</h2>
+            <p class="description">
+              Problems trying to resolve the conflict between
+            </p>
+            <p class="description">
+              the two major realms of Classical physics: Newtonian mechanics
+            </p>
 
-              <ul class="navigatio-list">
-                <li>Home</li>
-                <li>Products</li>
-                <li>Pricing</li>
-                <li>Contact</li>
-              </ul>
+            <div class="approdable-cards_wrapper">
+              <figure class="approdable-card">
+                <img src="assets/bg-shape.png" alt="shape" class="shape" />
+                <img src="assets/approdable_icon.png" alt="school" class="icon" />
+                <figcaption class="title">Training Courses</figcaption>
+                <span class="line"></span>
+                <figcaption class="description">
+                  The gradual </br> accumulation of information about
+                </figcaption>
+              </figure>
 
-              <div class="navigation-actions">
-                <a href="#" class="login">Login</a>
-                <a href="#" class="join-us"
-                  >Join us
-                  <img src="assets/arrow-right.svg" alt="arrow-right" />
-                </a>
+              <figure class="approdable-card">
+                <img src="assets/bg-shape.png" alt="shape" class="shape" />
+                <img src="assets/book.png" alt="school" class="icon" />
+                <figcaption class="title">Training Courses</figcaption>
+                <span class="line"></span>
+                <figcaption class="description">
+                  The gradual </br> accumulation of information about
+                </figcaption>
+              </figure>
+
+              <figure class="approdable-card active">
+                <img src="assets/active_shape.png" alt="shape" class="shape" />
+                <img src="assets/education.png" alt="school" class="icon" />
+                <figcaption class="title">Training Courses</figcaption>
+                <span class="line"></span>
+                <figcaption class="description">
+                  The gradual </br> accumulation of information about
+                </figcaption>
+              </figure>
+
+              <figure class="approdable-card">
+                <img src="assets/bg-shape.png" alt="shape" class="shape" />
+                <img src="assets/knowledge.png" alt="school" class="icon" />
+                <figcaption class="title">Training Courses</figcaption>
+                <span class="line"></span>
+                <figcaption class="description">
+                  The gradual </br> accumulation of information about
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      <!-- Approdable -->
+
+      <!-- Popular Courses -->
+        <section class="popular-courses">
+          <div class="container">
+            <div class="popular-courses_wrapper">
+              <div class="image-wrapper">
+                <img src="assets/popular_course_bg.png" alt="popular course" class="image">
+              </div>
+              <div class="info-wrapper">
+                <span class="line"></span>
+                <h2 class="title">Most Popular 
+                  Courses</h2>
+                <p class="description">Problems trying to resolve the conflict between 
+                  the two major realms of Classical physics: 
+                  Newtonian mechanics </p>
+                <a href="#" class="more">Learn More <img src="assets/more.svg" alt="more"></a>
               </div>
             </div>
           </div>
-        </nav>
+        </section>
+      <!-- Popular Courses -->
 
-        <article class="header-info">
-          <h4 class="title-sm">For better future</h4>
-          <h2 class="title-lg">HIGH QUALITY COURSES</h2>
-          <p class="description">
-            Find the right instructor for you from over 10,000 teachers
-          </p>
+      <!-- Teachers -->
+        <section class="teachers">
+          <div class="container">
+            <div class="teachers-wrapper">
+              <p class="title-sm">Health Queries</p>
+              <h2 class="lg">Our Experts Teacher</h2>
+              <p class="description">Problems trying to resolve the conflict between </br>
+                the two major realms of Classical physics: Newtonian mechanics</p>
+            </div>
 
-          <div class="header-article_actions">
-            <a href="#" class="get-quote">get quote now</a>
-            <a href="#" class="learn-more">learn more</a>
+            <div class="courses-wrapper">
+              <div class="course-card">
+                <img src="assets/card_bg_1.png" alt="card img">
+                <span class="sale">Sale</span>
+                <div class="actions">
+                  <a href="#">
+                    <img src="assets/heart.png" alt="heart">
+                  </a>
+                  
+                  <a href="#">
+                    <img src="assets/magazine.png" alt="magazine">
+                  </a>
+                  
+                  <a href="#">
+                    <img src="assets/eye.png" alt="eye">
+                  </a>
+                </div>
+                <div class="card-main">
+                  <p class="title-sm"></p>
+                  <h4 class="title-lg"></h4>
+                  <p class="description"></p>
+                  <p class="downloads">
+                    <img src="" alt="">
+                  </p>
+                  <p class="price">price</p>
+                  <div class="info">
+                      
+                    <p>
+                      <img src="" alt="">
+                      <span></span>
+                    </p>
+
+                    <p>
+                      <img src="" alt="">
+                      <span></span>
+                    </p>
+                  </div>
+                  <a href="#">Learn More</a>
+                </div>
+
+              </div>
+            </div>
           </div>
-        </article>
-      </header>
+        </section>
+      <!-- Teachers -->
 
-      <section class="sponsers">
-        <div class="sponsers-container">
-          <ul class="sponsers-wrapper">
-            <li>
-              <img src="assets/hooli.png" alt="hooli" />
-            </li>
-            <li>
-              <img src="assets/lia.png" alt="lia" />
-            </li>
-            <li>
-              <img src="assets/sponser-3.png" alt="sponser-3" />
-            </li>
-            <li>
-              <img src="assets/stripe.png" alt="stripe" />
-            </li>
-            <li>
-              <img src="assets/aws.png" alt="aws" />
-            </li>
-
-            <li>
-              <img src="assets/reddis.png" alt="reddis" />
-            </li>
-          </ul>
-        </div>
-      </section>
     </div>
   </body>
 </html>
