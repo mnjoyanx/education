@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
 .main-container {
   width: 1400px;
   margin: 0 auto;
@@ -12,6 +16,10 @@
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -165,8 +173,8 @@ nav {
   padding: 0 220px;
 }
 .sponsers .sponsers-wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   align-items: center;
   width: 100%;
 }
@@ -338,4 +346,459 @@ nav {
   color: #737373;
   margin-bottom: 112px;
   line-height: 20px;
+}
+
+.courses-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.courses-wrapper .course-card {
+  max-width: 238px;
+  overflow: hidden;
+  position: relative;
+}
+.courses-wrapper .course-card .main-img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.courses-wrapper .course-card .sale {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  align-items: center;
+  padding: 4px 10px;
+  background-color: #E74040;
+  font-size: 12px;
+  color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+.courses-wrapper .course-card .actions {
+  position: absolute;
+  top: 236px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.courses-wrapper .course-card .actions a {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.courses-wrapper .course-card .actions a img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.courses-wrapper .course-card .card-main {
+  background-color: #fff;
+  padding: 25px 20px 45px 25px;
+}
+.courses-wrapper .course-card .card-main .card-info_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.courses-wrapper .course-card .card-main .card-info_head .title-sm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #252B42;
+}
+.courses-wrapper .course-card .card-main .card-info_head .rate-box {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 26px;
+  gap: 5px;
+  background-color: #2D4059;
+  padding: 5px;
+  border-radius: 15px;
+}
+.courses-wrapper .course-card .card-main .card-info_head .rate-box .rate {
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+}
+.courses-wrapper .course-card .card-main .card-info_head .rate-box .star {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.courses-wrapper .course-card .card-main .title-lg {
+  font-weight: 700;
+  font-size: 16px;
+  color: #252B42;
+  margin-bottom: 15px;
+}
+.courses-wrapper .course-card .card-main .description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 15px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.courses-wrapper .course-card .card-main .downloads {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.courses-wrapper .course-card .card-main .downloads span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+}
+.courses-wrapper .course-card .card-main .downloads .icon {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.courses-wrapper .course-card .card-main .price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.courses-wrapper .course-card .card-main .price span {
+  font-weight: 700;
+  font-size: 14px;
+}
+.courses-wrapper .course-card .card-main .price .old {
+  color: #737373;
+}
+.courses-wrapper .course-card .card-main .price .new {
+  color: #FFAB71;
+}
+.courses-wrapper .course-card .card-main .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.courses-wrapper .course-card .card-main .info p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.courses-wrapper .course-card .card-main .info p img {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.courses-wrapper .course-card .card-main .info p span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.courses-wrapper .course-card .card-main .more {
+  width: 125px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #96BB7C;
+  border: 1px solid #96BB7C;
+  border-radius: 25px;
+  outline: none;
+}
+.courses-wrapper .course-card .card-main .more img {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.tariffs {
+  padding: 160px 0 190px;
+}
+.tariffs .title-sm {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #96BB7C;
+}
+.tariffs .title-lg {
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #252B42;
+}
+.tariffs .description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 109px;
+  line-height: 20px;
+}
+.tariffs .tariffs-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.tariffs .tariffs-wrapper .tariff-card {
+  max-width: 238px;
+  position: relative;
+  padding: 50px 40px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.tariffs .tariffs-wrapper .tariff-card .new-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: #E77C40;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  right: -10%;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
+.tariffs .tariffs-wrapper .tariff-card .tariff-card_head .favorite-box {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #96BB7C;
+  border-radius: 50%;
+}
+.tariffs .tariffs-wrapper .tariff-card .tariff-card_head .favorite-box img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.tariffs .tariffs-wrapper .tariff-card .tariff-card_head .title-lg {
+  margin-bottom: 35px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #252B42;
+}
+.tariffs .tariffs-wrapper .tariff-card .tariff-card_head .description {
+  font-weight: 700;
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 35px;
+  line-height: 20px;
+}
+.tariffs .tariffs-wrapper .tariff-card .tariff-card_head .price {
+  font-weight: 700;
+  font-size: 40px;
+  color: #96BB7C;
+}
+.tariffs .tariffs-wrapper .tariff-card .tariff-card_head .per-month {
+  color: #8EC2F2;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+.tariffs .tariffs-wrapper .tariff-card .tariff-card_head .plan-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 35px;
+  line-height: 20px;
+}
+.tariffs .tariffs-wrapper .tariff-card .tariff-card_head .try-tariff {
+  width: 100%;
+  height: 52px;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  background-color: #96BB7C;
+  border-radius: 5px;
+  outline: none;
+}
+.tariffs .tariffs-wrapper .list .list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.tariffs .tariffs-wrapper .list .list-item img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.tariffs .tariffs-wrapper .list .list-item span {
+  font-weight: 700;
+  font-size: 14px;
+  color: #737373;
+}
+
+.view-on_github {
+  padding: 20px;
+  position: fixed;
+  bottom: 10%;
+  border-radius: 50%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  background-color: #96BB7C;
+}
+.view-on_github:hover .github-icon {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.view-on_github .github-icon {
+  -webkit-animation: github-icon 1s infinite;
+          animation: github-icon 1s infinite;
+}
+
+@-webkit-keyframes github-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes github-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 772px) {
+  .main-container {
+    max-width: 300px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  header {
+    padding-bottom: 20px;
+  }
+  header .container {
+    padding: 0;
+  }
+  header nav {
+    margin-bottom: 60px;
+  }
+  header .header-info {
+    margin: 0;
+    max-width: 300px;
+  }
+  header .header-info .description {
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  header .header-info .header-article_actions a {
+    max-width: 49%;
+    font-size: 12px;
+  }
+  header .title-lg {
+    font-size: 26px !important;
+  }
+  .left-corner, .right-corner {
+    display: none;
+  }
+  .nav-wrapper .navigatio-list {
+    display: none;
+  }
+  .nav-wrapper .navigation-actions {
+    display: none;
+  }
+  .sponsers {
+    padding: 40px 0;
+  }
+  .sponsers .sponsers-container {
+    padding: 0 20px;
+  }
+  .sponsers .sponsers-container .sponsers-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 300px;
+    gap: 20px;
+  }
+  .approdable {
+    padding: 25px 0 35px;
+  }
+  .approdable .title-lg {
+    font-size: 26px;
+  }
+  .approdable .description {
+    max-width: 300px;
+  }
+  .approdable .approdable-cards_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 40px;
+  }
+  .approdable .approdable-cards_wrapper .approdable-card {
+    max-width: 280px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .popular-courses_wrapper .image-wrapper {
+    display: none;
+  }
+  .courses-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tariffs .tariffs-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tariffs .tariff-card {
+    padding: 20px 10px !important;
+  }
+  .tariffs .tariff-card .tariff-card_head .favorite-box {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .tariffs .new-box {
+    display: none !important;
+  }
+  .teachers {
+    padding: 40px 0;
+  }
+  .view-on_github {
+    bottom: 5%;
+    right: 5%;
+    padding: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
